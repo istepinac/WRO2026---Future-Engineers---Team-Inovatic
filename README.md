@@ -9,7 +9,7 @@ College: PMF-Faculty of Natural Sciences and Mathematics, Split <br>
 Description: Hi! I am Josip Stepinac and I can basically call myself natural inhabitant of WRO competitions. Robotics is my passion and I am teaching robotics for 5 years now. This is my first and only year of WRO in this section and I want to learn new stuff and experience new stages of robotics. I am currently at the 4th year of college and I would like to see myself as a professor one day. <br>
 
 Ivan Stepinac <br>
-<img width="341" height="360" alt="image" src="https://github.com/user-attachments/assets/6f70391f-cc8d-46d6-a2b1-11cc047bfaf2" />
+<img width="341" height="360" alt="image" src="https://github.com/user-attachments/assets/6f70391f-cc8d-46d6-a2b1-11cc047bfaf2" /> <br>
 Age: 20 <br>
 College: FESB- Faculty of Electrical Engineering, Mechanical Engineering and Naval Architecture, Split <br>
 Description: Hi! I am Ivan Stepinac and I am like my brother experienced at WRO competitons which I started competiting as a kid. I like to travel and experience new things but my passion is robotics and programming. Last year I made a project called Showme which translates sign language to words so people can easier talk with deaf. <br>
