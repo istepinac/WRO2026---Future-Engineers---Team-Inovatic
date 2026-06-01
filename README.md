@@ -133,8 +133,102 @@ As Team Inovatic, we are united by a passion for robotics, engineering, and inno
 Our mission is to develop creative solutions, continuously improve our skills, and inspire others through STEM and robotics. Through WRO, we challenge ourselves to think critically, collaborate, and turn ideas into reality.
 
 ---
+# 🧠 Initial Concept – Open Challenge
 
+At the beginning of our development process for the World Robot Olympiad Future Engineers Open Challenge, our team focused on designing a reliable and efficient method for recognizing upcoming turns on the track.
+
+Our main goal was to improve autonomous navigation by enabling the robot to detect and react to turns in advance, ensuring smooth and stable movement throughout the run.
+
+---
+
+## 🎯 First Idea: Color-Based Turn Detection
+
+Our initial concept was based on **colored guide lines placed before each turn**:
+
+- 🟠 Orange line → Right turn  
+- 🔵 Blue line → Left turn  
+
+A dedicated **color sensor** mounted close to the track would detect these markers in real time. Once detected, the robot would immediately prepare and execute the corresponding steering action.
+
+### Advantages of this approach:
+- Fast and simple color recognition  
+- Low computational complexity  
+- Clear separation of left/right decision logic  
+- Easy calibration during early testing  
+
+---
+
+## 📡 Supporting Navigation System
+
+At the same time, our robot was equipped with **two side-mounted distance sensors**:
+
+- Left sensor → measures distance to left wall  
+- Right sensor → measures distance to right wall  
+
+By comparing these values, the robot maintained proper centering on the track and corrected its position when drifting occurred. This ensured:
+- Stable movement  
+- Reduced collisions  
+- Improved trajectory accuracy  
+
+---
+
+## ⚙️ Design Limitations & System Evaluation
+
+As the system evolved, we carefully evaluated hardware constraints and system complexity.
+
+We identified several limitations:
+
+- Limited number of available sensor ports on the control hub  
+- High reliance on the camera system for visual processing  
+- Increased computational load when combining multiple active sensors  
+- Additional weight, wiring, and mechanical complexity  
+
+These factors could negatively impact system stability and overall performance during competition runs.
+
+---
+
+## 🔄 Final Decision
+
+After discussion with our mentor, we decided to **abandon the color-based navigation system** and focus on a more streamlined approach using:
+
+- Camera-based perception  
+- Distance sensor-based centering and navigation  
+
+This decision improved:
+- System efficiency  
+- Hardware simplicity  
+- Overall reliability  
+
+---
+
+## 📚 Conclusion
+
+Although this idea was not implemented in the final robot, it played an important role in our engineering process.
+
+It helped us:
+- Explore alternative navigation strategies  
+- Understand hardware limitations  
+- Improve system design thinking  
+- Learn the importance of optimization in robotics  
+
+Ultimately, this concept contributed significantly to the development of our final solution and our understanding of autonomous navigation systems.
 <div align="center">
+---
+
+## 🚀 Final Idea: Distance-Based Navigation & Turn Detection
+
+Our final approach for the Open Challenge is based on a **proportional centering system** that keeps the robot accurately aligned in the middle of the track.
+
+This is achieved using **two side-mounted distance sensors**, where:
+
+- The left sensor measures the distance to the left wall  
+- The right sensor measures the distance to the right wall  
+
+By continuously comparing and balancing these values, the robot maintains stable and proportional centering within the track.
+
+In addition, **turn detection is also based on these same distance sensors**. Changes in measured distances are used to identify upcoming turns, allowing the robot to react in advance and adjust its trajectory smoothly and efficiently.
+
+This approach provides a simplified, reliable, and tightly integrated navigation system that reduces hardware complexity while maintaining high accuracy and consistency during autonomous driving.
 
 ## ⚙️ Innovation • Creativity • Teamwork • Excellence
 
