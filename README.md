@@ -26,7 +26,7 @@ Proudly representing **Inovatic Split**
 ## 🧑‍💻 Josip Stepinac
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/b899a412-e6df-4ac8-bf09-66c7db93794b" width="450">
+  <img src="https://github.com/user-attachments/assets/b899a412-e6df-4ac8-bf09-66c7db93794b" width="600">
 </div>
 
 | Information | Details |
@@ -47,7 +47,7 @@ This is my first year competing in this WRO category, and I see it as an importa
 ## 🧑‍💻 Ivan Stepinac
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/6f70391f-cc8d-46d6-a2b1-11cc047bfaf2" width="420">
+  <img width="420" height="630" alt="ivan" src="https://github.com/user-attachments/assets/0e37b2b1-e81b-4b6b-8a7d-472c643aee26" />
 </div>
 
 | Information | Details |
@@ -93,7 +93,7 @@ I am excited to work alongside my teammates and continue growing through enginee
 ## 👨‍🏫 Jozo Pivac
 
 <div align="center">
-  <img src="COACH_PHOTO_URL" width="500">
+  <img width="667" height="444" alt="Jozo" src="https://github.com/user-attachments/assets/09043c5e-943e-45bb-9d0b-1fec1a6836f6" width ="500"/>
 </div>
 
 ### About Him
