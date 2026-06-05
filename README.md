@@ -117,6 +117,19 @@ He has been with us since our earliest days in primary school, and has played a 
 We are sincerely thankful for the opportunity he has given all three of us to experience robotics in a meaningful way and to contribute to the **Inovatic Split** community through knowledge and passion for technology.
 
 ---
+# 🎖️ Honorable Mention
+## 👨‍🎓 Vito Tonšić
+<div align="center">
+<img width="400" height="530" alt="VitoTonsic" src="https://github.com/user-attachments/assets/f30d0f7d-02d3-4fb0-a459-e734baae2c52" />
+</div>
+
+### About Him
+
+Vito Tonšić has shown exceptional enthusiasm for robotics and a strong interest in the WRO competition. As an active participant in our workshops, he consistently demonstrates curiosity, dedication, and a willingness to take on new challenges.
+
+Despite being one of the younger students in the community, Vito has often contributed valuable ideas and shared his knowledge with older team members, helping them solve problems and improve their projects. His collaborative spirit, creativity, and eagerness to learn make him a positive influence within the team.
+
+Through his passion for innovation and teamwork, Vito represents the values of the Inovatic community and has earned recognition as a promising young engineer and future competitor.
 
 # 🏆 About Inovatic
 
