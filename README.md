@@ -248,3 +248,228 @@ This approach provides a simplified, reliable, and tightly integrated navigation
 ### Team Inovatic | WRO 2026
 
 </div>
+
+
+
+---
+
+# 🤖 Robot Technical Documentation
+
+## 🚗 Introduction
+
+Our robot is based on a modified zCar-inspired chassis and uses Ackermann steering geometry. Originally, we considered converting a small toy car into an autonomous vehicle, but size limitations made it impossible to fit the required electronics and sensors. After researching existing RC car designs, we developed a simplified chassis optimized for the WRO Future Engineers challenge.
+
+### Key Design Decisions
+
+- Inspired by the zCar project
+- Ackermann steering system
+- Suspension removed to reduce complexity
+- Raspberry Pi Zero W as the central controller
+- Camera-based perception
+- Ultrasonic wall-distance sensing
+
+---
+
+## 🎯 Robot Objectives
+
+The robot is designed to:
+
+- Drive autonomously between walls
+- Maintain a centered position on the track
+- Detect and avoid obstacles
+- Control steering and propulsion independently
+- Process camera data in real time
+- Support future upgrades and expansion
+
+---
+
+## 🏗️ System Overview
+
+The robot consists of four main subsystems:
+
+1. Control System
+2. Drive System
+3. Sensor System
+4. Computer Vision System
+
+The Raspberry Pi Zero W acts as the central control unit connecting all subsystems.
+
+---
+
+## 🔧 Hardware Configuration
+
+### 🖥️ Control Unit
+
+**Raspberry Pi Zero W**
+
+- 1 GHz ARM11 Processor
+- 512 MB RAM
+- Wi‑Fi & Bluetooth Connectivity
+- CSI Camera Interface
+- GPIO Support for Sensors and Actuators
+
+### 📷 Camera
+
+**JOY-IT RB Camera Module**
+
+Used for:
+
+- Obstacle Detection
+- Environment Analysis
+- OpenCV Image Processing
+
+### 🚘 Steering System
+
+**SG90 Micro Servo**
+
+- Controls front wheel steering
+- PWM controlled via Raspberry Pi GPIO
+
+### ⚡ Drive System
+
+**DC Motor + L293D Driver**
+
+Functions:
+
+- Speed Control
+- Direction Control
+- PWM-Based Motor Driving
+
+### 📡 Distance Sensors
+
+Two ultrasonic sensors are mounted on the sides of the robot and are used for:
+
+- Wall distance measurement
+- Centering within the track
+- Turn detection
+
+---
+
+## 🏎️ Mechanical Design
+
+Main mechanical components:
+
+- Ackermann steering front axle
+- Servo steering linkage
+- Rear drive axle
+- Camera mount
+- Battery compartment
+- Sensor mounts
+
+The robot belongs to the small autonomous vehicle category used in the WRO Future Engineers competition.
+
+---
+
+## 🔌 Wiring Summary
+
+| Component | Connection |
+|------------|------------|
+| Servo Signal | GPIO18 |
+| Motor Driver IN1 | GPIO23 |
+| Motor Driver IN2 | GPIO24 |
+| Left Sensor TRIG | GPIO17 |
+| Left Sensor ECHO | GPIO27 |
+| Right Sensor TRIG | GPIO20 |
+| Right Sensor ECHO | GPIO21 |
+
+---
+
+## 🔋 Power System
+
+The robot uses two independent power sources:
+
+### Raspberry Pi System
+
+Powered by:
+
+- 5V / 3A Power Bank
+
+Supplies:
+
+- Raspberry Pi Zero W
+- Camera
+- Servo Motor
+- Sensors
+
+### Drive Motor
+
+Powered separately through:
+
+- L293D Motor Driver
+- 9V Li-Ion Battery
+
+This separation improves stability and reduces voltage drops during acceleration.
+
+### Future Upgrade
+
+Potential replacement of the power bank with:
+
+- Waveshare UPS HAT
+- DFRobot UPS HAT
+
+---
+
+## 💻 Software Architecture
+
+### Operating System
+
+**Raspberry Pi OS Lite**
+
+Reasons:
+
+- Lightweight
+- SSH-Friendly
+- Low Memory Usage
+
+### Programming Language
+
+**Python**
+
+Chosen because of:
+
+- Excellent OpenCV Support
+- Fast Development
+- Existing Team Experience
+
+### Main Libraries
+
+- OpenCV
+- Picamera2
+- pigpio
+- NumPy
+
+The pigpio library significantly reduced servo jitter during testing.
+
+---
+
+## 📊 Expected Camera Performance
+
+Using Raspberry Pi Zero W:
+
+| Parameter | Value |
+|------------|--------|
+| Resolution | 320×240 |
+| Frame Rate | 5–15 FPS |
+| Reaction Time | 100–250 ms |
+
+Suitable for stable low-speed autonomous navigation.
+
+---
+
+## 🚀 Future Improvements
+
+Potential upgrades include:
+
+- More powerful Raspberry Pi
+- Higher-quality camera
+- Wheel encoders
+- IMU sensor
+- Environment mapping
+- Advanced computer vision algorithms
+
+---
+
+## ✅ Conclusion
+
+The robot is a compact autonomous vehicle capable of navigating between walls and avoiding obstacles without human intervention. By combining computer vision, ultrasonic sensing, and proportional steering control, it achieves reliable navigation while maintaining a modular architecture that supports future development.
+
