@@ -16,7 +16,7 @@ Proudly representing **Inovatic Split**
 ## 📸 Team Photo
 
 <div align="center">
-  <img src="TEAM_PHOTO_URL" width="700">
+<img width="420" alt="WhatsApp Image 2026-06-07 at 18 14 23" src="https://github.com/user-attachments/assets/24640689-cff8-428f-ab88-5352350c8635" />
 </div>
 
 ---
