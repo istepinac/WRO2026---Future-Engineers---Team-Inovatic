@@ -44,7 +44,7 @@ except KeyboardInterrupt:
     print("\nProgram prekinut.")
 
 finally:
-    GPIO.output(24, GPIO.LOW)  # ugasi motor
+    GPIO.output(24, GPIO.LOW)  
     GPIO.cleanup()
     steer(0.22)
     print("GPIO24 ugašen.")
