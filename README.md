@@ -13,7 +13,7 @@ Proudly representing **Inovatic Split**
 
 ---
 
-## 📌 Kazalo sadržaja / Table of Contents
+## 📌Table of Contents
 * [👥 Team Members](#-team-members)
 * [🎯 Coach](#-coach)
 * [🎖️ Honorable Mention](#️-honorable-mention)
