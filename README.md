@@ -2,7 +2,7 @@
 
 <div align="center">
 
-### World Robot Olympiad 2026  
+### World Robot Olympiad 2026   
 Future Engineers
 
 Passionate about robotics, innovation, engineering, and STEM education.
@@ -10,6 +10,16 @@ Passionate about robotics, innovation, engineering, and STEM education.
 Proudly representing **Inovatic Split**
 
 </div>
+
+---
+
+## 📌 Kazalo sadržaja / Table of Contents
+* [👥 Team Members](#-team-members)
+* [🎯 Coach](#-coach)
+* [🎖️ Honorable Mention](#️-honorable-mention)
+* [🏆 About Inovatic & Mission](#-about-inovatic)
+* [🧠 Initial Concept – Open Challenge](#-initial-concept--open-challenge)
+* [🤖 Robot Technical Documentation](#-robot-technical-documentation)
 
 ---
 
@@ -243,13 +253,11 @@ In addition, **turn detection is also based on these same distance sensors**. Ch
 
 This approach provides a simplified, reliable, and tightly integrated navigation system that reduces hardware complexity while maintaining high accuracy and consistency during autonomous driving.
 
-## ⚙️ Innovation • Creativity • Teamwork • Excellence
+<h2>⚙️ Innovation • Creativity • Teamwork • Excellence</h2>
 
 ### Team Inovatic | WRO 2026
 
 </div>
-
-
 
 ---
 
@@ -472,4 +480,3 @@ Potential upgrades include:
 ## ✅ Conclusion
 
 The robot is a compact autonomous vehicle capable of navigating between walls and avoiding obstacles without human intervention. By combining computer vision, ultrasonic sensing, and proportional steering control, it achieves reliable navigation while maintaining a modular architecture that supports future development.
-
