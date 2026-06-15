@@ -480,3 +480,124 @@ Potential upgrades include:
 ## ✅ Conclusion
 
 The robot is a compact autonomous vehicle capable of navigating between walls and avoiding obstacles without human intervention. By combining computer vision, ultrasonic sensing, and proportional steering control, it achieves reliable navigation while maintaining a modular architecture that supports future development.
+---
+
+# 🔄 Hardware Challenges & Architecture Update
+
+Throughout the development process, our team encountered several hardware integration challenges while testing the initial prototype. These challenges highlighted the complexity of combining motor drivers, sensors, power systems, and computer vision hardware within a compact autonomous vehicle.
+
+Rather than viewing these challenges as setbacks, we treated them as an opportunity to re-evaluate the overall system architecture and identify a more reliable long-term solution.
+
+---
+
+## ⚠️ Lessons Learned
+
+During testing, we observed that integrating all sensing, control, and processing tasks directly on the Raspberry Pi increased system complexity and introduced additional hardware reliability concerns.
+
+This experience provided valuable insights regarding:
+
+- Power management
+- Hardware reliability
+- System modularity
+- Maintainability
+- Scalability for future upgrades
+
+---
+
+## 💡 Updated Development Strategy
+
+To improve reliability and accelerate development, we decided to redesign the system architecture by combining the strengths of both Raspberry Pi and LEGO SPIKE Prime.
+
+The goal of this approach is to separate high-level decision-making from low-level hardware control.
+
+---
+
+## 🏗️ Hybrid Architecture
+
+### 🖥️ Raspberry Pi
+
+Responsible for:
+
+- Camera integration
+- Image acquisition
+- OpenCV processing
+- Environment analysis
+- Obstacle detection
+- Navigation decisions
+
+### 🧱 LEGO SPIKE Prime
+
+Responsible for:
+
+- Motor control
+- Steering control
+- Sensor interfacing
+- Real-time actuator execution
+
+---
+
+## 🔗 Communication Between Systems
+
+The Raspberry Pi and LEGO SPIKE will communicate continuously, allowing the exchange of:
+
+- Steering commands
+- Driving commands
+- Sensor measurements
+- Navigation data
+
+This architecture enables the Raspberry Pi to focus entirely on perception and decision-making while LEGO SPIKE handles reliable hardware execution.
+
+---
+
+## 🚀 Advantages of the New Approach
+
+By combining both platforms, we benefit from the strengths of each system:
+
+| Raspberry Pi | LEGO SPIKE |
+|--------------|------------|
+| Advanced computer vision | Reliable motor control |
+| OpenCV support | Robust sensor integration |
+| High computational power | Modular hardware platform |
+| Future AI capabilities | Rapid prototyping |
+
+Expected benefits include:
+
+- Improved system stability
+- Reduced hardware complexity
+- Faster development cycles
+- Easier testing and debugging
+- Better scalability for future upgrades
+
+---
+# 🧱 Building Instructions
+
+To ensure reproducibility and provide a complete overview of our robot design, detailed building instructions were created using Stud.io.
+
+The instructions include:
+
+- Complete chassis assembly
+- Steering mechanism construction
+- Sensor mounting positions
+- Structural components
+- Modular design elements
+
+📄 **Building Instructions PDF:**  
+[ModelCar.pdf](ModelCar.pdf)
+
+These instructions allow anyone to rebuild the mechanical structure of the robot and better understand the engineering decisions behind the design.
+
+---
+
+## 🔮 Future Development
+
+The updated architecture creates a strong foundation for future enhancements such as:
+
+- Advanced object detection
+- Intelligent path planning
+- Autonomous navigation improvements
+- Machine learning integration
+- Enhanced computer vision algorithms
+
+This hybrid approach combines the computational capabilities of Raspberry Pi with the reliability and flexibility of LEGO SPIKE, creating a robust platform for future development and competition use.
+
+---
