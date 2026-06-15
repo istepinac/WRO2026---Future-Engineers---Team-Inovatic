@@ -20,6 +20,7 @@ Proudly representing **Inovatic Split**
 * [🏆 About Inovatic & Mission](#-about-inovatic)
 * [🧠 Initial Concept – Open Challenge](#-initial-concept--open-challenge)
 * [🤖 Robot Technical Documentation](#-robot-technical-documentation)
+* [🧱 Building Instructions](#-building-instructions)
 
 ---
 
