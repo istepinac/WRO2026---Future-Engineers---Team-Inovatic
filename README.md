@@ -477,11 +477,6 @@ Potential upgrades include:
 
 ---
 
-## ✅ Conclusion
-
-The robot is a compact autonomous vehicle capable of navigating between walls and avoiding obstacles without human intervention. By combining computer vision, ultrasonic sensing, and proportional steering control, it achieves reliable navigation while maintaining a modular architecture that supports future development.
----
-
 # 🔄 Hardware Challenges & Architecture Update
 
 Throughout the development process, our team encountered several hardware integration challenges while testing the initial prototype. These challenges highlighted the complexity of combining motor drivers, sensors, power systems, and computer vision hardware within a compact autonomous vehicle.
