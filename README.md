@@ -21,7 +21,7 @@ Proudly representing **Inovatic Split**
 * [🧠 Initial Concept – Open Challenge](#-initial-concept--open-challenge)
 * [🤖 Robot Technical Documentation](#-robot-technical-documentation)
 * [🧱 Building Instructions](#-building-instructions)
-* [🧠Software Architecture – Open Challenge](#software-architecture--open-challenge)e (
+* [🧠Software Architecture – Open Challenge](#software-architecture--open-challenge)
 
 ---
 
