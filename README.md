@@ -21,6 +21,7 @@ Proudly representing **Inovatic Split**
 * [🏆 About Inovatic & Mission](#-about-inovatic)
 * [🧠 Initial Concept – Open Challenge](#-initial-concept--open-challenge)
 * [🤖 Robot Technical Documentation](#-robot-technical-documentation)
+* [📸 Project Gallery](#-project-gallery)
 * [🧱 Building Instructions](#-building-instructions)
 * [🧠 Software Architecture – Open Challenge](#-software-architecture--open-challenge)
 
@@ -567,6 +568,7 @@ Expected benefits include:
 - Better scalability for future upgrades
 
 ---
+# 📸 Project Gallery
 <div align="center">
 
   <img src="https://github.com/user-attachments/assets/01822ad8-db28-42e6-a55b-32a4555d96e3" width="350" alt="Image 1" />
