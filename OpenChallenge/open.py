@@ -24,20 +24,19 @@ steering.reset_angle(0)
 #SENSORS
 
 left_sensor = UltrasonicSensor(Port.E)
-right_sensor = UltrasonicSensor(Port.A)
+right_sensor = UltrasonicSensor(Port.C)
 
 #SETTINGS
 
-SPEED = 340
 
-KP = 4.0
-KD = 0.5
+KP = 2.25
+KD = 0.1
 MAX_STEER = 40
 
 TURN_ANGLE = 90
 
 #STATE
-
+Speed = 175
 target_heading = 0
 last_error = 0
 
@@ -57,11 +56,10 @@ def normalize(angle):
 
 def filtered_distance(sensor):
     total = 0
-    for i in range(5):
+    for i in range(20):
         total += sensor.distance()
-        wait(3)
-    return total / 5
-
+        wait(7)
+    return total / 20
 
 #PID DRIVE
 
@@ -80,8 +78,36 @@ def gyro_follow():
 
     last_error = error
 
-    drive.drive(SPEED, 0)
+    drive.drive(Speed, 0)
 
+def drive_straight_cm(distance_cm, speed=300):
+    global target_heading, last_error
+
+    # resetiraj encoder (koliko su kotači prošli)
+    drive.reset()
+    
+    start_heading = target_heading
+
+    target_mm = distance_cm * 10  # cm → mm
+
+    while drive.distance() < target_mm:
+
+        heading = hub.imu.heading()
+
+        error = normalize(start_heading - heading)
+        derivative = error - last_error
+
+        steer = KP * error + KD * derivative
+        steer = clamp(steer, -MAX_STEER, MAX_STEER)
+
+        steering.run_target(500, steer, wait=False)
+
+        drive.drive(speed, 0)
+
+        last_error = error
+        wait(10)
+
+    drive.stop()
 
 #TURNS
 
@@ -96,7 +122,7 @@ def turn_left_90():
     target_heading -= TURN_ANGLE
 
     steering.run_target(300, -40, wait=False)
-    drive.drive(SPEED, 0)
+    drive.drive(75, 0)
 
     while hub.imu.heading() > target:
         wait(5)
@@ -118,9 +144,9 @@ def turn_right_90():
     target_heading += TURN_ANGLE
 
     steering.run_target(300, 40, wait=False)
-    drive.drive(SPEED, 0)
+    drive.drive(75, 0)
 
-    while hub.imu.heading() > target:
+    while hub.imu.heading() < (target - 2):
         wait(5)
 
     steering.run_target(300, 0, wait=True)
@@ -134,32 +160,50 @@ def turn_right_90():
 hub.imu.reset_heading(0)
 wait(300)
 
-drive.drive(SPEED, 0)
+drive.drive(Speed, 0)
 
 #MAIN
+left_Active = True
+right_Active = True
+count = 0
 
-while True:
+print("L", left_sensor.distance(), "R", right_sensor.distance())
+wait(600)
+while count < 12:
 
     left_dist = filtered_distance(left_sensor)
     right_dist = filtered_distance(right_sensor)
 
+    event = False
 
-    if filtered_distance(left_sensor) > 1500:
-        wait(100)
+    # LEFT
+    if left_Active and left_dist > 1999:
+        right_Active = False
         turn_left_90()
 
-        while filtered_distance(left_sensor) > 1500:
+        while filtered_distance(left_sensor) > 1700:
             gyro_follow()
             wait(10)
 
+        event = True
 
-    if filtered_distance(right_sensor) > 1500:
-        wait(100)
+    # RIGHT
+    elif right_Active and right_dist > 1999:
+        left_Active = False
         turn_right_90()
 
-        while filtered_distance(right_sensor) > 1500:
+        while filtered_distance(right_sensor) > 1700:
             gyro_follow()
             wait(10)
 
+        event = True
+    Speed = 175
     gyro_follow()
     wait(10)
+
+    # COUNT samo ako se stvarno nešto dogodilo
+    if event:
+        count += 1
+
+print("Gotov")
+steering.run_target(300, 0, wait=True)
