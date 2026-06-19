@@ -1,3 +1,4 @@
+
 # 🤖 Team Inovatic
 
 <div align="center">
@@ -266,6 +267,8 @@ This approach provides a simplified, reliable, and tightly integrated navigation
 ## 🚗 Introduction
 
 Our robot is based on a modified zCar-inspired chassis and uses Ackermann steering geometry. Originally, we considered converting a small toy car into an autonomous vehicle, but size limitations made it impossible to fit the required electronics and sensors. After researching existing RC car designs, we developed a simplified chassis optimized for the WRO Future Engineers challenge.
+<div align="center"><img width="282" height="500" alt="WhatsApp Image 2026-06-19 at 11 06 16" src="https://github.com/user-attachments/assets/36a66d1a-0fc6-4995-8f9c-961265d5f80c" /></div>
+
 
 ### Key Design Decisions
 
@@ -564,6 +567,40 @@ Expected benefits include:
 - Better scalability for future upgrades
 
 ---
+<div align="center">
+
+  <img src="https://github.com/user-attachments/assets/01822ad8-db28-42e6-a55b-32a4555d96e3" width="350" alt="Image 1" />
+
+  <br><br>
+
+  <img src="https://github.com/user-attachments/assets/bbc75085-8d5a-4269-9861-79c0433c2127" width="800" alt="Image 2" />
+
+  <br><br>
+
+  <img src="https://github.com/user-attachments/assets/ba49fe77-2704-49c4-90ff-6602c39320c6" width="700" alt="Image 3" />
+
+  <br><br>
+
+  <img src="https://github.com/user-attachments/assets/1763614c-9b65-4581-a114-33508f25df9a" width="700" alt="Image 4" />
+
+  <br><br>
+
+  <img src="https://github.com/user-attachments/assets/a75f5149-5322-43f7-9120-25a4c3193b47" width="600" alt="Image 5" />
+
+  <br><br>
+
+  <img src="https://github.com/user-attachments/assets/f64f2bab-bf21-45f0-81e6-4849134e5dfb" width="600" alt="Image 6" />
+
+  <br><br>
+
+  <img src="https://github.com/user-attachments/assets/3a648a25-ce5f-42d5-90fe-57ed5e192664" width="800" alt="Image 7" />
+
+  <br><br>
+
+  <img src="https://github.com/user-attachments/assets/82d4543c-0731-4ca4-928f-015dea7d4caf" width="900" alt="Image 8" />
+
+</div>
+
 # 🧱 Building Instructions
 
 To ensure reproducibility and provide a complete overview of our robot design, detailed building instructions were created using Stud.io.
